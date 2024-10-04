@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    /* background-color: aqua; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --color: white;
+    --font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    /* border: 4px solid rgb(255, 1, 149); */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left #travelBloom {
+    text-decoration: none;
+    font-family: var(--font-family);
+    color: var(--color);
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* .logo {
+    background-color: rgb(33, 20, 220);
+    width: 50px;
+    height: 30px;
+} */
+
+.middle {
+    width: 20vw;
+    /* border: 3px solid black; */
+}
+
+.middle ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li a {
+    font-family: var(--font-family);
+    color: var(--color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.right {
+    width: 29vw;
+    height: 90%;
+    /* border: 3px solid black; */
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#btnSearch {
+    border: none;
+    width: 200px;
+}
+
+.btn {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 5vw;
+    border: none;
+    border-radius: 4px;
+    background-color: #047b7b;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+main {
+    position: fixed;
+    top: 10vh;
+    width: 100%;
+    /* border: 2px solid rgb(20, 172, 30); */
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgImageContainer {
+    position: relative;
+    width: 100%;
+    /* background-color: brown; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContent {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bgImageContainer img {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+/* Desiging of aside */
+aside {
+    width: 5vw;
+    height: 85vh;
+    /* background-color: black; */
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.vrline {
+    border: 2px solid white;
+    height: 30vh;
+}
+
+.appLogoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Desiging of sec1 */
+.sec1 {
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.377); */
+    width: 50vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+.sec1 h1 {
+    font-family: var(--font-family);
+    color: var(--color);
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.sec1 p {
+    font-family: var(--font-family);
+    color: var(--color);
+    font-size: 20px
+}
+
+.sec1 #bookNow {
+    width: 7vw;
+}
+
+
+/* overflow-y: auto; */
+/* -ms-overflow-style: none; */
+/* IE and Edge */
+/* scrollbar-width: none; */
+/* Firefox */
+
+
+/* Css for sec2 of main container */
+.sec2 {
+    padding-top: 10px;
+    width: 40vw;
+    height: 90vh;
+    /* background-color: blue; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.cTime {
+    border-radius: 4px;
+    width: 500px;
+    height: 5vh;
+    background-color: aqua;
+}
+
+.items {
+    width: 40vw;
+    height: 90vh;
+    /* background-color: rgb(0, 255, 85); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    overflow: auto;
+    /* overflow-y: auto; */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* You can hide a scrollbar on an element while being given the ability to scroll,
+through the following: A pseudo selector ::-webkit-scrollbar,
+which is only supported for webkit browsers. In the pseudo selector,
+you can define the display: none property which would hide the scrollbar on the element but retain its scrolling function. The -ms-overflow-style: none property which is only supported for for Edge and other legacy browsers like IE. The scrollbar-width: none property which is supported by Firefox  */
+.items::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+    /* padding: 5px; */
+    width: 500px;
+    height: 420px;
+    /* border: 2px solid black; */
+    border-radius: 4px;
+    background-color: white;
+}
+
+.box a img {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    height: 280px;
+    width: 500px;
+}
+
+
+/* Designing for About Us */
+.aboutUs-sec3 {
+    font-family: sans-serif;
+    color: white;
+    width: 91vw;
+    height: 80vh;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutUsContainer {
+    width: 80vw;
+    height: 25vh;
+    /* background-color: rgb(0, 255, 42); */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.aboutUsContainer-1 h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.aboutUsContainer-2 p {
+    font-size: 25px;
+}
+
+.aboutUsContainer-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-aboutUsContainer-3 {
+    width: 150px;
+    height: 150px;
+}
+
+.sub-aboutUsContainer-3-1 h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sub-aboutUsContainer-3-2,
+.sub-aboutUsContainer-3-3,
+.sub-aboutUsContainer-3-4 {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+.memberLogo {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    align-self: flex-start;
+}
+
+
+/* Desiging for Contact Us */
+.contactUsContainer {
+    font-family: sans-serif;
+    color: white;
+    width: 90vw;
+    height: 80vh;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactUsContainer-sec1,
+.contactUsContainer-sec2 {
+    padding: 20px;
+    width: 50vw;
+    height: 55vh;
+
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contactUsContainer-sec2 {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.269);
+}
+
+#contactus h1 {
+    font-size: 60px;
+    font-weight: bold;
+
+}
+
+#contactus p {
+    font-weight: bold;
+}
+
+.formContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name,
+#email {
+    color: white;
+    border-radius: 4px;
+    border: 2px solid rgba(128, 128, 128, 0.831);
+    background-color: rgba(0, 0, 0, 0);
+    width: 40vw;
+    height: 4vh;
+}
+
+#message {
+    background-color: rgba(0, 0, 0, 0);
+    width: 40vw;
+    
+}
+#formSubmitBtn{
+    width: 40vw;
+}
